@@ -1,0 +1,16 @@
+{
+    "name": "thomas/shopping_cart",
+    "type": "project",
+    "authors": [
+        {
+            "name": "thrnkk",
+            "email": "thomas.ricardo.reinke@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    }
+}
