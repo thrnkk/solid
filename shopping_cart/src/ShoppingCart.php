@@ -50,7 +50,7 @@ class ShoppingCart {
         
     }
 
-    public function sendEmail() {
+    public function sendConfirmationEmail() {
         echo 'email sended';
     }
 
