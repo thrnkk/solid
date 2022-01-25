@@ -6,4 +6,5 @@ Projeto utilizando os princípios do SOLID.
 
 ### :rocket: Princípios
 
-S - Single Responsibility Principle (SRP): Uma classe deve ter uma e apenas uma responsabilidade.
+<b>S</b> - Single Responsibility Principle (SRP): Uma classe deve ter uma e apenas uma responsabilidade. <br><br>
+<b>O</b> - Open / Closed Principle (OCP): Uma entidade, tais como módulos, classes, funções, etc, devem sempre estarem abertas para extensões, mas fechadas para modificações.
