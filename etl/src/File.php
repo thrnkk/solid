@@ -27,6 +27,26 @@ class File {
             $this->setData($line[0], $line[1], $line[2]);
 
         }
+
+        fclose($handle);
+    }
+
+    public function readTXT(string $path): void {
+        
+        $handle = fopen($path, 'r');
+
+        while (!feof($handle)) {
+
+            $line = fgets($handle);
+            
+            $this->setData(
+                substr($line, 11, 30),
+                substr($line, 0, 11),
+                substr($line, 41, -1)
+            );
+        }
+
+        fclose($handle);
     }
 
 }

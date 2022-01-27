@@ -30,8 +30,15 @@ class Reader {
         $path = $this->getDirectory() . '/' . $this->getFile();
 
         $file = new File();
-        $file->readCSV($path);
 
+        $extension = explode('.', $this->getFile())[1];
+
+        if ($extension == 'txt') {
+            $file->readTXT($path);
+        } else if ($extension == 'csv') {
+            $file->readCSV($path);
+        }
+        
         return $file->getData();
     }
 
