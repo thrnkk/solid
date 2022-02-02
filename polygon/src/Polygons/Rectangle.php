@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Polygon;
 
 class Rectangle {
 
@@ -21,10 +21,6 @@ class Rectangle {
 
     public function getHeight(): float {
         return $this->height;
-    }
-
-    public function getArea(): float {
-        return $this->getHeight() * $this->getWidth();
     }
 
 }

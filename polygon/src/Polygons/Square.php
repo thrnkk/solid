@@ -1,8 +1,19 @@
 <?php
 
-namespace App;
+namespace App\Polygon;
 
-class Square extends Rectangle {
+class Square {
+
+    protected $width;
+    protected $height;
+
+    public function getWidth(): float {
+        return $this->width;
+    }
+
+    public function getHeight(): float {
+        return $this->height;
+    }
 
     public function setWidth(float $width): void {
         $this->width = $width;
